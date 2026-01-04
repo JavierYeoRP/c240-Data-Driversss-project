@@ -1,7 +1,7 @@
 // TODO: Replace YOUR_SPACE and YOUR_CHATFLOW_ID with your own values below
 async function query(data) {
   const response = await fetch(
-    "https://api.chatbot.com/spaces/YOUR_SPACE/chatflows/YOUR_CHATFLOW_ID/query",
+    "https://flowise-production-bf3e.up.railway.app/api/v1/prediction/d1ced115-2d39-463d-aa21-a8151d2abc41",
     {
       method: "POST",
       headers: {
@@ -57,6 +57,26 @@ document.addEventListener('DOMContentLoaded', function() {
   const minimizeBtn = document.querySelector('.chatbot-minimize-btn');
   const toggleBtn = document.querySelector('.chatbot-toggle-btn');
 
+  // Auto-expand input as user types
+  if (input) {
+    input.style.overflow = 'hidden';
+    input.style.resize = 'none';
+    input.style.minHeight = '40px'; // Start small
+    input.style.height = '40px'; // Initial height
+    
+    input.addEventListener('input', function() {
+      this.style.height = '40px'; // Reset to minimum
+      this.style.height = (this.scrollHeight) + 'px'; // Expand to content
+    });
+    
+    // Reset height when form is submitted
+    form.addEventListener('submit', function() {
+      setTimeout(() => {
+        input.style.height = '40px';
+      }, 0);
+    });
+  }
+
   // Check if chatbot has been opened before
   const chatbotOpened = localStorage.getItem('chatbotOpened');
   
@@ -88,9 +108,11 @@ document.addEventListener('DOMContentLoaded', function() {
     messages.innerHTML += `<div class='chat-msg user'><b>You:</b> ${userMsg}</div>`;
     input.value = '';
     errorDiv.textContent = '';
+    messages.scrollTop = messages.scrollHeight;
 
     try {
       messages.innerHTML += `<div class='chat-msg bot' style='color:#888;'>Chatbot is typing...</div>`;
+      messages.scrollTop = messages.scrollHeight;
       const response = await query({"question": userMsg});
       let botMsg = response.text || JSON.stringify(response);
       messages.innerHTML = messages.innerHTML.replace('Chatbot is typing...','');
