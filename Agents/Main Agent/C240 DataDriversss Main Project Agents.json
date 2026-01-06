@@ -4,8 +4,8 @@
       "id": "startAgentflow_0",
       "type": "agentFlow",
       "position": {
-        "x": 101.5157165665104,
-        "y": 102.2735748497656
+        "x": 143.05231905466894,
+        "y": 111.85894465472524
       },
       "data": {
         "id": "startAgentflow_0",
@@ -192,10 +192,10 @@
         "selected": false
       },
       "width": 103,
-      "height": 66,
+      "height": 65,
       "positionAbsolute": {
-        "x": 101.5157165665104,
-        "y": 102.2735748497656
+        "x": 143.05231905466894,
+        "y": 111.85894465472524
       },
       "selected": false,
       "dragging": false
@@ -203,8 +203,8 @@
     {
       "id": "agentAgentflow_0",
       "position": {
-        "x": 262.7876228832734,
-        "y": 99.31520404454409
+        "x": 313.67230736683643,
+        "y": 107.83553276006381
       },
       "data": {
         "id": "agentAgentflow_0",
@@ -656,7 +656,7 @@
           "agentMessages": [
             {
               "role": "system",
-              "content": "<p>You are a Cooking Assistant. Your tasks:</p><ol><li><p>Detect the user’s intent. Return <strong>only one JSON string</strong>:</p><ul><li><p><code>{\"intent\":\"Cooking\"}</code> → for recipe requests, cooking methods, meal preparation, baking, ingredients, quantities, timings, or general food questions.</p></li><li><p><code>{\"intent\":\"Substitutions\"}</code> → for replacing, swapping, omitting, or finding alternatives for ingredients due to dietary restrictions, allergies, availability, or preferences.</p></li></ul></li><li><p>Handle greetings gracefully. If the user greets (e.g., “hi”, “hello”, “hey”), respond with a <strong>friendly welcome message</strong> and prompt:<br><code>\"Hello! 👋 Would you like me to help you find a recipe, or are you looking to substitute an ingredient?\"</code></p></li><li><p>For other neutral cooking-related messages without explicit substitution requests, classify as <code>{\"intent\":\"Cooking\"}</code>.</p></li></ol><p><strong>Important Rules:</strong></p><ul><li><p><strong>Always return only the JSON string</strong> for intent classification.</p></li><li><p><strong>Do not include explanations, extra keys, or additional formatting.</strong></p></li><li><p>Greeting messages should also trigger a <strong>friendly prompt</strong>, but the JSON intent must still be returned as <code>{\"intent\":\"Cooking\"}</code>.</p></li></ul><p><strong>Examples:</strong></p><ul><li><p>User: <code>hi</code></p><ul><li><p>Bot response:<br>JSON: <code>{\"intent\":\"Cooking\"}</code><br>Chat: <code>\"Hello! 👋 Would you like me to help you find a recipe, or are you looking to substitute an ingredient?\"</code></p></li></ul></li><li><p>User: <code>I want to bake a cake</code></p><ul><li><p>Bot response:<br>JSON: <code>{\"intent\":\"Cooking\"}</code></p></li></ul></li><li><p>User: <code>Can I replace sugar in this recipe?</code></p><ul><li><p>Bot response:<br>JSON: <code>{\"intent\":\"Substitutions\"}</code></p></li></ul></li><li><p>User: <code>hello there</code></p><ul><li><p>Bot response:<br>JSON: <code>{\"intent\":\"Cooking\"}</code><br>Chat: <code>\"Hi there! Are you interested in a recipe today, or do you need an ingredient substitution?\"</code></p></li></ul></li></ul>"
+              "content": "<p>You are a Cooking Assistant. Your tasks:</p><ol><li><p>Detect the user’s intent. Return <strong>only one JSON string</strong>:</p><ul><li><p><code>{\"intent\":\"Cooking\"}</code> → for recipe requests, cooking methods, meal preparation, baking, ingredients, quantities, timings, or general food questions.</p></li><li><p><code>{\"intent\":\"Substitutions\"}</code> → for replacing, swapping, omitting, or finding alternatives for ingredients due to dietary restrictions, allergies, availability, or preferences.</p></li><li><p><code>{\"intent\":\"Greetings\"}</code> → Just a greeting to say Hi to chatbot.</p></li></ul></li><li><p>Handle greetings gracefully. If the user greets (e.g., “hi”, “hello”, “hey”), respond with a <strong>friendly welcome message</strong> and prompt:<br>Hello! 👋 Welcome to the Dessert Bot.</p><p>Here are some desserts I can help you with:</p><p>- Chocolate Cake</p><p>- Brownies</p><p>- Cheesecake</p><p>- Cupcakes</p><p>- Apple Pie</p><p>I can also suggest substitutions for these ingredients:</p><p>- Sugar</p><p>- Chocolate</p><p>- Butter</p><p>- Egg</p><p>- Flour</p><p>Would you like me to help you find a recipe, or are you looking to substitute an ingredient?</p></li><li><p>For other neutral cooking-related messages without explicit substitution requests, classify as <code>{\"intent\":\"Cooking\"}</code>.</p></li></ol><p><strong>Important Rules:</strong></p><ul><li><p><strong>Always return only the JSON string</strong> for intent classification.</p></li><li><p><strong>Do not include explanations, extra keys, or additional formatting.</strong></p></li><li><p>Greeting messages should also trigger a <strong>friendly prompt</strong>, but the JSON intent must still be returned as <code>{\"intent\":\"Cooking\"}</code>.</p></li></ul><p><strong>Examples:</strong></p><ul><li><p>User: <code>hi</code></p><ul><li><p>Bot response:<br>JSON: <code>{\"intent\":\"Cooking\"}</code><br>Chat: <code>\"Hello! 👋 Would you like me to help you find a recipe, or are you looking to substitute an ingredient?\"</code></p></li></ul></li><li><p>User: <code>I want to bake a cake</code></p><ul><li><p>Bot response:<br>JSON: <code>{\"intent\":\"Cooking\"}</code></p></li></ul></li><li><p>User: <code>Can I replace sugar in this recipe?</code></p><ul><li><p>Bot response:<br>JSON: <code>{\"intent\":\"Substitutions\"}</code></p></li></ul></li><li><p>User: <code>hello there</code></p><ul><li><p>Bot response:<br>JSON: <code>{\"intent\":\"Cooking\"}</code><br>Chat: <code>\"Hi there! Are you interested in a recipe today, or do you need an ingredient substitution?\"</code></p></li></ul></li></ul>"
             }
           ],
           "agentTools": "",
@@ -707,16 +707,16 @@
       "height": 72,
       "selected": false,
       "positionAbsolute": {
-        "x": 262.7876228832734,
-        "y": 99.31520404454409
+        "x": 313.67230736683643,
+        "y": 107.83553276006381
       },
       "dragging": false
     },
     {
       "id": "conditionAgentAgentflow_0",
       "position": {
-        "x": 577.2815309682626,
-        "y": 95.5235748497656
+        "x": 578.3465720577026,
+        "y": 94.45853376032562
       },
       "data": {
         "id": "conditionAgentAgentflow_0",
@@ -814,7 +814,7 @@
         "inputAnchors": [],
         "inputs": {
           "conditionAgentModel": "groqChat",
-          "conditionAgentInstructions": "<p>Given the variable <span class=\"variable\" data-type=\"mention\" data-id=\"agentAgentflow_0\" data-label=\"agentAgentflow_0\">{{ agentAgentflow_0 }}</span> and the user text <span class=\"variable\" data-type=\"mention\" data-id=\"question\" data-label=\"question\">{{ question }}</span>, decide whether the intent is \"Cooking\" or \"Substitutions\".</p><p>Classify as \"Substitutions\" if the user asks to replace, swap, omit, or find alternatives for ingredients due to availability, dietary needs, allergies, or preferences.</p><p>Classify as \"Cooking\" if the user asks about recipes, cooking methods, preparation steps, ingredients, quantities, timings, baking, or general food-related questions.</p><p>Return only \"Cooking\" or \"Substitutions\". No other text.</p><p></p>",
+          "conditionAgentInstructions": "<p>Given the variable <span class=\"variable\" data-type=\"mention\" data-id=\"agentAgentflow_0\" data-label=\"agentAgentflow_0\">{{ agentAgentflow_0 }}</span> and the user text <span class=\"variable\" data-type=\"mention\" data-id=\"question\" data-label=\"question\">{{ question }}</span>, decide whether the intent is \"Cooking\", \"Substitutions\" or \"Greetings\"</p><p>Classify as \"Substitutions\" if the user asks to replace, swap, omit, or find alternatives for ingredients due to availability, dietary needs, allergies, or preferences.</p><p>Classify as \"Cooking\" if the user asks about recipes, cooking methods, preparation steps, ingredients, quantities, timings, baking, or general food-related questions.<br><br>Classify as \"Greetings\" if the user says like \"Hi\", \"Hello\", \"Hey\" etc.</p><p>Return only \"Cooking\", \"Substitutions\" or \"Greetings\". No other text.</p><p></p>",
           "conditionAgentInput": "<p><span class=\"variable\" data-type=\"mention\" data-id=\"question\" data-label=\"question\">{{ question }}</span> </p>",
           "conditionAgentScenarios": [
             {
@@ -822,6 +822,9 @@
             },
             {
               "scenario": "Substitutions"
+            },
+            {
+              "scenario": "Greetings"
             }
           ],
           "conditionAgentOverrideSystemPrompt": "",
@@ -837,13 +840,21 @@
         "outputAnchors": [
           {
             "id": "conditionAgentAgentflow_0-output-0",
-            "label": "Condition Agent",
-            "name": "conditionAgentAgentflow"
+            "label": 0,
+            "name": 0,
+            "description": "Condition 0"
           },
           {
             "id": "conditionAgentAgentflow_0-output-1",
-            "label": "Condition Agent",
-            "name": "conditionAgentAgentflow"
+            "label": 1,
+            "name": 1,
+            "description": "Condition 1"
+          },
+          {
+            "id": "conditionAgentAgentflow_0-output-2",
+            "label": 2,
+            "name": 2,
+            "description": "Condition 2"
           }
         ],
         "outputs": {
@@ -853,11 +864,11 @@
       },
       "type": "agentFlow",
       "width": 252,
-      "height": 80,
+      "height": 100,
       "selected": false,
       "positionAbsolute": {
-        "x": 577.2815309682626,
-        "y": 95.5235748497656
+        "x": 578.3465720577026,
+        "y": 94.45853376032562
       },
       "dragging": false
     },
@@ -902,7 +913,7 @@
       },
       "type": "agentFlow",
       "width": 198,
-      "height": 66,
+      "height": 65,
       "selected": false,
       "positionAbsolute": {
         "x": 1283.0454171371214,
@@ -951,7 +962,7 @@
       },
       "type": "agentFlow",
       "width": 192,
-      "height": 66,
+      "height": 65,
       "selected": false,
       "positionAbsolute": {
         "x": 1605.729786852251,
@@ -2189,6 +2200,567 @@
         "y": 73.75397662606261
       },
       "dragging": false
+    },
+    {
+      "id": "agentAgentflow_3",
+      "position": {
+        "x": 1045.8544301267566,
+        "y": 284.62173561758107
+      },
+      "data": {
+        "id": "agentAgentflow_3",
+        "label": "Greetings Agent",
+        "version": 3.2,
+        "name": "agentAgentflow",
+        "type": "Agent",
+        "color": "#4DD0E1",
+        "baseClasses": [
+          "Agent"
+        ],
+        "category": "Agent Flows",
+        "description": "Dynamically choose and utilize tools during runtime, enabling multi-step reasoning",
+        "inputParams": [
+          {
+            "label": "Model",
+            "name": "agentModel",
+            "type": "asyncOptions",
+            "loadMethod": "listModels",
+            "loadConfig": true,
+            "id": "agentAgentflow_3-input-agentModel-asyncOptions",
+            "display": true
+          },
+          {
+            "label": "Messages",
+            "name": "agentMessages",
+            "type": "array",
+            "optional": true,
+            "acceptVariable": true,
+            "array": [
+              {
+                "label": "Role",
+                "name": "role",
+                "type": "options",
+                "options": [
+                  {
+                    "label": "System",
+                    "name": "system"
+                  },
+                  {
+                    "label": "Assistant",
+                    "name": "assistant"
+                  },
+                  {
+                    "label": "Developer",
+                    "name": "developer"
+                  },
+                  {
+                    "label": "User",
+                    "name": "user"
+                  }
+                ]
+              },
+              {
+                "label": "Content",
+                "name": "content",
+                "type": "string",
+                "acceptVariable": true,
+                "generateInstruction": true,
+                "rows": 4
+              }
+            ],
+            "id": "agentAgentflow_3-input-agentMessages-array",
+            "display": true
+          },
+          {
+            "label": "OpenAI Built-in Tools",
+            "name": "agentToolsBuiltInOpenAI",
+            "type": "multiOptions",
+            "optional": true,
+            "options": [
+              {
+                "label": "Web Search",
+                "name": "web_search_preview",
+                "description": "Search the web for the latest information"
+              },
+              {
+                "label": "Code Interpreter",
+                "name": "code_interpreter",
+                "description": "Write and run Python code in a sandboxed environment"
+              },
+              {
+                "label": "Image Generation",
+                "name": "image_generation",
+                "description": "Generate images based on a text prompt"
+              }
+            ],
+            "show": {
+              "agentModel": "chatOpenAI"
+            },
+            "id": "agentAgentflow_3-input-agentToolsBuiltInOpenAI-multiOptions",
+            "display": true
+          },
+          {
+            "label": "Gemini Built-in Tools",
+            "name": "agentToolsBuiltInGemini",
+            "type": "multiOptions",
+            "optional": true,
+            "options": [
+              {
+                "label": "URL Context",
+                "name": "urlContext",
+                "description": "Extract content from given URLs"
+              },
+              {
+                "label": "Google Search",
+                "name": "googleSearch",
+                "description": "Search real-time web content"
+              },
+              {
+                "label": "Code Execution",
+                "name": "codeExecution",
+                "description": "Write and run Python code in a sandboxed environment"
+              }
+            ],
+            "show": {
+              "agentModel": "chatGoogleGenerativeAI"
+            },
+            "id": "agentAgentflow_3-input-agentToolsBuiltInGemini-multiOptions",
+            "display": false
+          },
+          {
+            "label": "Anthropic Built-in Tools",
+            "name": "agentToolsBuiltInAnthropic",
+            "type": "multiOptions",
+            "optional": true,
+            "options": [
+              {
+                "label": "Web Search",
+                "name": "web_search_20250305",
+                "description": "Search the web for the latest information"
+              },
+              {
+                "label": "Web Fetch",
+                "name": "web_fetch_20250910",
+                "description": "Retrieve full content from specified web pages"
+              }
+            ],
+            "show": {
+              "agentModel": "chatAnthropic"
+            },
+            "id": "agentAgentflow_3-input-agentToolsBuiltInAnthropic-multiOptions",
+            "display": false
+          },
+          {
+            "label": "Tools",
+            "name": "agentTools",
+            "type": "array",
+            "optional": true,
+            "array": [
+              {
+                "label": "Tool",
+                "name": "agentSelectedTool",
+                "type": "asyncOptions",
+                "loadMethod": "listTools",
+                "loadConfig": true
+              },
+              {
+                "label": "Require Human Input",
+                "name": "agentSelectedToolRequiresHumanInput",
+                "type": "boolean",
+                "optional": true
+              }
+            ],
+            "id": "agentAgentflow_3-input-agentTools-array",
+            "display": true
+          },
+          {
+            "label": "Knowledge (Document Stores)",
+            "name": "agentKnowledgeDocumentStores",
+            "type": "array",
+            "description": "Give your agent context about different document sources. Document stores must be upserted in advance.",
+            "array": [
+              {
+                "label": "Document Store",
+                "name": "documentStore",
+                "type": "asyncOptions",
+                "loadMethod": "listStores"
+              },
+              {
+                "label": "Describe Knowledge",
+                "name": "docStoreDescription",
+                "type": "string",
+                "generateDocStoreDescription": true,
+                "placeholder": "Describe what the knowledge base is about, this is useful for the AI to know when and how to search for correct information",
+                "rows": 4
+              },
+              {
+                "label": "Return Source Documents",
+                "name": "returnSourceDocuments",
+                "type": "boolean",
+                "optional": true
+              }
+            ],
+            "optional": true,
+            "id": "agentAgentflow_3-input-agentKnowledgeDocumentStores-array",
+            "display": true
+          },
+          {
+            "label": "Knowledge (Vector Embeddings)",
+            "name": "agentKnowledgeVSEmbeddings",
+            "type": "array",
+            "description": "Give your agent context about different document sources from existing vector stores and embeddings",
+            "array": [
+              {
+                "label": "Vector Store",
+                "name": "vectorStore",
+                "type": "asyncOptions",
+                "loadMethod": "listVectorStores",
+                "loadConfig": true
+              },
+              {
+                "label": "Embedding Model",
+                "name": "embeddingModel",
+                "type": "asyncOptions",
+                "loadMethod": "listEmbeddings",
+                "loadConfig": true
+              },
+              {
+                "label": "Knowledge Name",
+                "name": "knowledgeName",
+                "type": "string",
+                "placeholder": "A short name for the knowledge base, this is useful for the AI to know when and how to search for correct information"
+              },
+              {
+                "label": "Describe Knowledge",
+                "name": "knowledgeDescription",
+                "type": "string",
+                "placeholder": "Describe what the knowledge base is about, this is useful for the AI to know when and how to search for correct information",
+                "rows": 4
+              },
+              {
+                "label": "Return Source Documents",
+                "name": "returnSourceDocuments",
+                "type": "boolean",
+                "optional": true
+              }
+            ],
+            "optional": true,
+            "id": "agentAgentflow_3-input-agentKnowledgeVSEmbeddings-array",
+            "display": true
+          },
+          {
+            "label": "Enable Memory",
+            "name": "agentEnableMemory",
+            "type": "boolean",
+            "description": "Enable memory for the conversation thread",
+            "default": true,
+            "optional": true,
+            "id": "agentAgentflow_3-input-agentEnableMemory-boolean",
+            "display": true
+          },
+          {
+            "label": "Memory Type",
+            "name": "agentMemoryType",
+            "type": "options",
+            "options": [
+              {
+                "label": "All Messages",
+                "name": "allMessages",
+                "description": "Retrieve all messages from the conversation"
+              },
+              {
+                "label": "Window Size",
+                "name": "windowSize",
+                "description": "Uses a fixed window size to surface the last N messages"
+              },
+              {
+                "label": "Conversation Summary",
+                "name": "conversationSummary",
+                "description": "Summarizes the whole conversation"
+              },
+              {
+                "label": "Conversation Summary Buffer",
+                "name": "conversationSummaryBuffer",
+                "description": "Summarize conversations once token limit is reached. Default to 2000"
+              }
+            ],
+            "optional": true,
+            "default": "allMessages",
+            "show": {
+              "agentEnableMemory": true
+            },
+            "id": "agentAgentflow_3-input-agentMemoryType-options",
+            "display": true
+          },
+          {
+            "label": "Window Size",
+            "name": "agentMemoryWindowSize",
+            "type": "number",
+            "default": "20",
+            "description": "Uses a fixed window size to surface the last N messages",
+            "show": {
+              "agentMemoryType": "windowSize"
+            },
+            "id": "agentAgentflow_3-input-agentMemoryWindowSize-number",
+            "display": true
+          },
+          {
+            "label": "Max Token Limit",
+            "name": "agentMemoryMaxTokenLimit",
+            "type": "number",
+            "default": "2000",
+            "description": "Summarize conversations once token limit is reached. Default to 2000",
+            "show": {
+              "agentMemoryType": "conversationSummaryBuffer"
+            },
+            "id": "agentAgentflow_3-input-agentMemoryMaxTokenLimit-number",
+            "display": false
+          },
+          {
+            "label": "Input Message",
+            "name": "agentUserMessage",
+            "type": "string",
+            "description": "Add an input message as user message at the end of the conversation",
+            "rows": 4,
+            "optional": true,
+            "acceptVariable": true,
+            "show": {
+              "agentEnableMemory": true
+            },
+            "id": "agentAgentflow_3-input-agentUserMessage-string",
+            "display": true
+          },
+          {
+            "label": "Return Response As",
+            "name": "agentReturnResponseAs",
+            "type": "options",
+            "options": [
+              {
+                "label": "User Message",
+                "name": "userMessage"
+              },
+              {
+                "label": "Assistant Message",
+                "name": "assistantMessage"
+              }
+            ],
+            "default": "userMessage",
+            "id": "agentAgentflow_3-input-agentReturnResponseAs-options",
+            "display": true
+          },
+          {
+            "label": "JSON Structured Output",
+            "name": "agentStructuredOutput",
+            "description": "Instruct the Agent to give output in a JSON structured schema",
+            "type": "array",
+            "optional": true,
+            "acceptVariable": true,
+            "array": [
+              {
+                "label": "Key",
+                "name": "key",
+                "type": "string"
+              },
+              {
+                "label": "Type",
+                "name": "type",
+                "type": "options",
+                "options": [
+                  {
+                    "label": "String",
+                    "name": "string"
+                  },
+                  {
+                    "label": "String Array",
+                    "name": "stringArray"
+                  },
+                  {
+                    "label": "Number",
+                    "name": "number"
+                  },
+                  {
+                    "label": "Boolean",
+                    "name": "boolean"
+                  },
+                  {
+                    "label": "Enum",
+                    "name": "enum"
+                  },
+                  {
+                    "label": "JSON Array",
+                    "name": "jsonArray"
+                  }
+                ]
+              },
+              {
+                "label": "Enum Values",
+                "name": "enumValues",
+                "type": "string",
+                "placeholder": "value1, value2, value3",
+                "description": "Enum values. Separated by comma",
+                "optional": true,
+                "show": {
+                  "agentStructuredOutput[$index].type": "enum"
+                }
+              },
+              {
+                "label": "JSON Schema",
+                "name": "jsonSchema",
+                "type": "code",
+                "placeholder": "{\n    \"answer\": {\n        \"type\": \"string\",\n        \"description\": \"Value of the answer\"\n    },\n    \"reason\": {\n        \"type\": \"string\",\n        \"description\": \"Reason for the answer\"\n    },\n    \"optional\": {\n        \"type\": \"boolean\"\n    },\n    \"count\": {\n        \"type\": \"number\"\n    },\n    \"children\": {\n        \"type\": \"array\",\n        \"items\": {\n            \"type\": \"object\",\n            \"properties\": {\n                \"value\": {\n                    \"type\": \"string\",\n                    \"description\": \"Value of the children's answer\"\n                }\n            }\n        }\n    }\n}",
+                "description": "JSON schema for the structured output",
+                "optional": true,
+                "hideCodeExecute": true,
+                "show": {
+                  "agentStructuredOutput[$index].type": "jsonArray"
+                }
+              },
+              {
+                "label": "Description",
+                "name": "description",
+                "type": "string",
+                "placeholder": "Description of the key"
+              }
+            ],
+            "id": "agentAgentflow_3-input-agentStructuredOutput-array",
+            "display": true
+          },
+          {
+            "label": "Update Flow State",
+            "name": "agentUpdateState",
+            "description": "Update runtime state during the execution of the workflow",
+            "type": "array",
+            "optional": true,
+            "acceptVariable": true,
+            "array": [
+              {
+                "label": "Key",
+                "name": "key",
+                "type": "asyncOptions",
+                "loadMethod": "listRuntimeStateKeys"
+              },
+              {
+                "label": "Value",
+                "name": "value",
+                "type": "string",
+                "acceptVariable": true,
+                "acceptNodeOutputAsVariable": true
+              }
+            ],
+            "id": "agentAgentflow_3-input-agentUpdateState-array",
+            "display": true
+          }
+        ],
+        "inputAnchors": [],
+        "inputs": {
+          "agentModel": "chatOpenAI",
+          "agentMessages": [
+            {
+              "role": "system",
+              "content": "<p>You respond if the user message contains greetings like \"hello\", \"hey\", or \"hi\".</p><p>Handle greetings gracefully. If the user greets (e.g., “hi”, “hello”, “hey”), respond with a friendly welcome message and prompt:</p><p><strong>Hello! 👋 Welcome to the Dessert Bot.</strong></p><p>Here are some desserts I can help you with:</p><ul><li><p>Cakes</p></li><li><p>Cookies</p></li><li><p>Brownies</p></li><li><p>(To be added Later 1)</p></li><li><p>(To be added Later 2)</p></li></ul><p>I can also suggest substitutions for these ingredients:</p><ul><li><p>Sugar</p></li><li><p>Chocolate</p></li><li><p>Butter</p></li><li><p>Egg</p></li><li><p>Flour</p></li></ul><p>Would you like me to help you find a recipe, or are you looking to substitute an ingredient?</p><h1>Output Format</h1><p>The response should be a friendly message in a conversational tone, maintaining a structure similar to the example provided. It should include a welcome message, a list of desserts, a list of ingredients for substitutions, and a prompt for further assistance.</p><h1>Examples</h1><p><strong>Input:</strong> \"Hi there!\"<br><strong>Output:</strong><br>Hello! 👋 Welcome to the Dessert Bot.</p><p>Here are some desserts I can help you with:</p><ul><li><p>Cakes</p></li><li><p>Cookies</p></li><li><p>Brownies</p></li><li><p>(To be added Later 1)</p></li><li><p>(To be added Later 2)</p></li></ul><p>I can also suggest substitutions for these ingredients:</p><ul><li><p>Sugar</p></li><li><p>Chocolate</p></li><li><p>Butter</p></li><li><p>Egg</p></li><li><p>Flour</p></li></ul><p>Would you like me to help you find a recipe, or are you looking to substitute an ingredient?</p><p><strong>Input:</strong> \"Hey!\"<br><strong>Output:</strong><br>Hello! 👋 Welcome to the Dessert Bot.</p><p>Here are some desserts I can help you with:</p><ul><li><p>Cakes</p></li><li><p>Cookies</p></li><li><p>Brownies</p></li><li><p>(To be added Later 1)</p></li><li><p>(To be added Later 2)</p></li></ul><p>I can also suggest substitutions for these ingredients:</p><ul><li><p>Sugar</p></li><li><p>Chocolate</p></li><li><p>Butter</p></li><li><p>Egg</p></li><li><p>Flour</p></li></ul><p>Would you like me to help you find a recipe, or are you looking to substitute an ingredient?</p><p>(Note: Real examples should reflect the same format and greeting style as in the examples above.)</p>"
+            }
+          ],
+          "agentToolsBuiltInOpenAI": "",
+          "agentTools": "",
+          "agentKnowledgeDocumentStores": "",
+          "agentKnowledgeVSEmbeddings": "",
+          "agentEnableMemory": true,
+          "agentMemoryType": "windowSize",
+          "agentUserMessage": "",
+          "agentReturnResponseAs": "assistantMessage",
+          "agentStructuredOutput": "",
+          "agentUpdateState": "",
+          "agentModelConfig": {
+            "cache": "",
+            "modelName": "gpt-4o-mini",
+            "temperature": 0.9,
+            "streaming": true,
+            "maxTokens": "",
+            "topP": "",
+            "frequencyPenalty": "",
+            "presencePenalty": "",
+            "timeout": "",
+            "strictToolCalling": "",
+            "stopSequence": "",
+            "basepath": "",
+            "proxyUrl": "",
+            "baseOptions": "",
+            "allowImageUploads": "",
+            "imageResolution": "low",
+            "reasoning": "",
+            "reasoningEffort": "",
+            "reasoningSummary": "",
+            "agentModel": "chatOpenAI"
+          },
+          "agentMemoryWindowSize": "6"
+        },
+        "outputAnchors": [
+          {
+            "id": "agentAgentflow_3-output-agentAgentflow",
+            "label": "Agent",
+            "name": "agentAgentflow"
+          }
+        ],
+        "outputs": {},
+        "selected": false
+      },
+      "type": "agentFlow",
+      "width": 177,
+      "height": 72,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1045.8544301267566,
+        "y": 284.62173561758107
+      }
+    },
+    {
+      "id": "directReplyAgentflow_2",
+      "position": {
+        "x": 1306.7894970395475,
+        "y": 291.0119821542208
+      },
+      "data": {
+        "id": "directReplyAgentflow_2",
+        "label": "Greetings Response",
+        "version": 1,
+        "name": "directReplyAgentflow",
+        "type": "DirectReply",
+        "color": "#4DDBBB",
+        "hideOutput": true,
+        "baseClasses": [
+          "DirectReply"
+        ],
+        "category": "Agent Flows",
+        "description": "Directly reply to the user with a message",
+        "inputParams": [
+          {
+            "label": "Message",
+            "name": "directReplyMessage",
+            "type": "string",
+            "rows": 4,
+            "acceptVariable": true,
+            "id": "directReplyAgentflow_2-input-directReplyMessage-string",
+            "display": true
+          }
+        ],
+        "inputAnchors": [],
+        "inputs": {
+          "directReplyMessage": "<p><span class=\"variable\" data-type=\"mention\" data-id=\"agentAgentflow_3\" data-label=\"agentAgentflow_3\">{{ agentAgentflow_3 }}</span> </p>"
+        },
+        "outputAnchors": [],
+        "outputs": {},
+        "selected": false
+      },
+      "type": "agentFlow",
+      "width": 202,
+      "height": 65,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 1306.7894970395475,
+        "y": 291.0119821542208
+      },
+      "dragging": false
     }
   ],
   "edges": [
@@ -2285,6 +2857,33 @@
       },
       "type": "agentFlow",
       "id": "agentAgentflow_2-agentAgentflow_2-output-agentAgentflow-directReplyAgentflow_1-directReplyAgentflow_1"
+    },
+    {
+      "source": "conditionAgentAgentflow_0",
+      "sourceHandle": "conditionAgentAgentflow_0-output-2",
+      "target": "agentAgentflow_3",
+      "targetHandle": "agentAgentflow_3",
+      "data": {
+        "sourceColor": "#ff8fab",
+        "targetColor": "#4DD0E1",
+        "edgeLabel": "2",
+        "isHumanInput": false
+      },
+      "type": "agentFlow",
+      "id": "conditionAgentAgentflow_0-conditionAgentAgentflow_0-output-2-agentAgentflow_3-agentAgentflow_3"
+    },
+    {
+      "source": "agentAgentflow_3",
+      "sourceHandle": "agentAgentflow_3-output-agentAgentflow",
+      "target": "directReplyAgentflow_2",
+      "targetHandle": "directReplyAgentflow_2",
+      "data": {
+        "sourceColor": "#4DD0E1",
+        "targetColor": "#4DDBBB",
+        "isHumanInput": false
+      },
+      "type": "agentFlow",
+      "id": "agentAgentflow_3-agentAgentflow_3-output-agentAgentflow-directReplyAgentflow_2-directReplyAgentflow_2"
     }
   ]
 }
