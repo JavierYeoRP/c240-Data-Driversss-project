@@ -50,27 +50,6 @@ c240-Data-Driversss-project/
     └── Main Agent/
 ```
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Internet connection (for chatbot API and CDN resources)
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/c240datadriversss/Final-Assessment.git
-   ```
-
-2. Navigate to the Website folder:
-   ```bash
-   cd Final-Assessment/Website
-   ```
-
-3. Open `index.html` in your web browser
-
 ### Usage
 
 1. **Using the Chatbot:**
